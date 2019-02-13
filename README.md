@@ -28,3 +28,18 @@
  
  ### Další zdroje
  Instalační kroky byly vydestilovány z: https://rustwasm.github.io/book/game-of-life/setup.html, kde naleznete podrobnější instrukce a vysvětlení.
+
+### Error: Unexpected section: 0xc6
+Ve `www/package.json` zamknout závislosti na starší verze:
+
+```
+  "devDependencies": {
+    "hello-wasm-pack": "0.1.0",
+    "webpack": "4.16.3",
+    "webpack-cli": "3.1.0",
+    "webpack-dev-server": "3.1.5",
+    "copy-webpack-plugin": "4.5.2"
+  }
+```
+
+Potom znovu `npm i` a `npm link ...`
