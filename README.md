@@ -29,7 +29,7 @@
  ### Další zdroje
  Instalační kroky byly vydestilovány z: https://rustwasm.github.io/book/game-of-life/setup.html, kde naleznete podrobnější instrukce a vysvětlení.
 
-### Error: Unexpected section: 0xc6
+### Řešení chyby "Error: Unexpected section: 0xc6"
 Ve `www/package.json` zamknout závislosti na starší verze:
 
 ```
